@@ -1,0 +1,867 @@
+[ {
+  "dataset_index" : 0,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 5,
+  "num_components" : 2,
+  "SCCs" : [ [ 8 ], [ 7, 3, 6, 9, 4, 2, 1, 5, 0 ] ],
+  "SCC_sizes" : [ 1, 9 ],
+  "condensation_edges" : [ {
+    "from" : 1,
+    "to" : 0,
+    "w" : 1
+  } ],
+  "source_component" : 1,
+  "derived_task_order" : [ 7, 3, 6, 9, 4, 2, 1, 5, 0, 8 ],
+  "topological_order" : [ 1, 0 ],
+  "shortest_distances" : [ 1.0, 0.0 ],
+  "longest_distances" : [ 1.0, 0.0 ],
+  "critical_path" : [ 1, 0 ],
+  "critical_length" : 1.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 10,
+      "edges_traversed" : 30
+    },
+    "scc_time_ns" : 998300,
+    "condensation_time_ns" : 588000,
+    "topo_counters" : {
+      "kahn_pops" : 2,
+      "kahn_edge_checks" : 1
+    },
+    "topo_time_ns" : 252800,
+    "shortest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "shortest_time_ns" : 255300,
+    "longest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "longest_time_ns" : 221000,
+    "total_time_ns" : 30743600
+  }
+}, {
+  "dataset_index" : 1,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 3,
+  "num_components" : 6,
+  "SCCs" : [ [ 4 ], [ 5, 2, 3 ], [ 0 ], [ 1 ], [ 6 ], [ 7 ] ],
+  "SCC_sizes" : [ 1, 3, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 1,
+    "to" : 0,
+    "w" : 1
+  }, {
+    "from" : 2,
+    "to" : 1,
+    "w" : 5
+  }, {
+    "from" : 3,
+    "to" : 1,
+    "w" : 2
+  }, {
+    "from" : 3,
+    "to" : 0,
+    "w" : 10
+  }, {
+    "from" : 4,
+    "to" : 0,
+    "w" : 8
+  }, {
+    "from" : 4,
+    "to" : 1,
+    "w" : 5
+  }, {
+    "from" : 4,
+    "to" : 3,
+    "w" : 6
+  }, {
+    "from" : 5,
+    "to" : 3,
+    "w" : 7
+  } ],
+  "source_component" : 1,
+  "derived_task_order" : [ 0, 6, 7, 1, 5, 2, 3, 4 ],
+  "topological_order" : [ 2, 4, 5, 3, 1, 0 ],
+  "shortest_distances" : [ 1.0, 0.0, "Infinity", "Infinity", "Infinity", "Infinity" ],
+  "longest_distances" : [ 1.0, 0.0, "-Infinity", "-Infinity", "-Infinity", "-Infinity" ],
+  "critical_path" : [ 1, 0 ],
+  "critical_length" : 1.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 8,
+      "edges_traversed" : 16
+    },
+    "scc_time_ns" : 146700,
+    "condensation_time_ns" : 31400,
+    "topo_counters" : {
+      "kahn_pops" : 6,
+      "kahn_edge_checks" : 8
+    },
+    "topo_time_ns" : 53200,
+    "shortest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "shortest_time_ns" : 7600,
+    "longest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "longest_time_ns" : 5400,
+    "total_time_ns" : 544500
+  }
+}, {
+  "dataset_index" : 2,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 5,
+  "num_components" : 6,
+  "SCCs" : [ [ 3 ], [ 1 ], [ 4 ], [ 0 ], [ 2 ], [ 5 ] ],
+  "SCC_sizes" : [ 1, 1, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 1,
+    "to" : 0,
+    "w" : 10
+  }, {
+    "from" : 3,
+    "to" : 2,
+    "w" : 4
+  }, {
+    "from" : 3,
+    "to" : 1,
+    "w" : 4
+  } ],
+  "source_component" : 5,
+  "derived_task_order" : [ 0, 2, 5, 4, 1, 3 ],
+  "topological_order" : [ 3, 4, 5, 2, 1, 0 ],
+  "shortest_distances" : [ "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", 0.0 ],
+  "longest_distances" : [ "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", 0.0 ],
+  "critical_path" : [ 5 ],
+  "critical_length" : 0.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 6,
+      "edges_traversed" : 4
+    },
+    "scc_time_ns" : 26600,
+    "condensation_time_ns" : 19200,
+    "topo_counters" : {
+      "kahn_pops" : 6,
+      "kahn_edge_checks" : 3
+    },
+    "topo_time_ns" : 49500,
+    "shortest_counters" : { },
+    "shortest_time_ns" : 3000,
+    "longest_counters" : { },
+    "longest_time_ns" : 1800,
+    "total_time_ns" : 214900
+  }
+}, {
+  "dataset_index" : 3,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 9,
+  "num_components" : 18,
+  "SCCs" : [ [ 17 ], [ 11 ], [ 8 ], [ 7 ], [ 6 ], [ 13 ], [ 12 ], [ 3 ], [ 0 ], [ 1 ], [ 9 ], [ 4 ], [ 2 ], [ 10 ], [ 5 ], [ 14 ], [ 15 ], [ 16 ] ],
+  "SCC_sizes" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 1,
+    "to" : 0,
+    "w" : 7
+  }, {
+    "from" : 2,
+    "to" : 1,
+    "w" : 9
+  }, {
+    "from" : 3,
+    "to" : 2,
+    "w" : 3
+  }, {
+    "from" : 4,
+    "to" : 2,
+    "w" : 1
+  }, {
+    "from" : 4,
+    "to" : 3,
+    "w" : 2
+  }, {
+    "from" : 6,
+    "to" : 0,
+    "w" : 6
+  }, {
+    "from" : 7,
+    "to" : 6,
+    "w" : 1
+  }, {
+    "from" : 7,
+    "to" : 5,
+    "w" : 6
+  }, {
+    "from" : 8,
+    "to" : 4,
+    "w" : 7
+  }, {
+    "from" : 8,
+    "to" : 7,
+    "w" : 5
+  }, {
+    "from" : 9,
+    "to" : 1,
+    "w" : 10
+  }, {
+    "from" : 11,
+    "to" : 10,
+    "w" : 8
+  }, {
+    "from" : 11,
+    "to" : 3,
+    "w" : 3
+  }, {
+    "from" : 11,
+    "to" : 2,
+    "w" : 3
+  }, {
+    "from" : 12,
+    "to" : 11,
+    "w" : 9
+  }, {
+    "from" : 12,
+    "to" : 5,
+    "w" : 5
+  }, {
+    "from" : 12,
+    "to" : 3,
+    "w" : 6
+  }, {
+    "from" : 13,
+    "to" : 5,
+    "w" : 10
+  }, {
+    "from" : 13,
+    "to" : 6,
+    "w" : 5
+  }, {
+    "from" : 14,
+    "to" : 13,
+    "w" : 7
+  }, {
+    "from" : 14,
+    "to" : 5,
+    "w" : 1
+  }, {
+    "from" : 14,
+    "to" : 2,
+    "w" : 1
+  }, {
+    "from" : 15,
+    "to" : 0,
+    "w" : 7
+  } ],
+  "source_component" : 10,
+  "derived_task_order" : [ 0, 1, 2, 5, 14, 15, 16, 6, 3, 4, 10, 9, 7, 13, 12, 8, 11, 17 ],
+  "topological_order" : [ 8, 9, 12, 14, 15, 16, 17, 4, 7, 11, 13, 10, 3, 5, 6, 2, 1, 0 ],
+  "shortest_distances" : [ "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", 0.0, "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity" ],
+  "longest_distances" : [ "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", 0.0, "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity" ],
+  "critical_path" : [ 10 ],
+  "critical_length" : 0.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 18,
+      "edges_traversed" : 25
+    },
+    "scc_time_ns" : 51100,
+    "condensation_time_ns" : 39300,
+    "topo_counters" : {
+      "kahn_pops" : 18,
+      "kahn_edge_checks" : 23
+    },
+    "topo_time_ns" : 61800,
+    "shortest_counters" : { },
+    "shortest_time_ns" : 3300,
+    "longest_counters" : { },
+    "longest_time_ns" : 2100,
+    "total_time_ns" : 346800
+  }
+}, {
+  "dataset_index" : 4,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 14,
+  "num_components" : 12,
+  "SCCs" : [ [ 12 ], [ 14, 8, 9, 0 ], [ 13 ], [ 1 ], [ 5 ], [ 11 ], [ 10 ], [ 6 ], [ 3 ], [ 2 ], [ 7 ], [ 4 ] ],
+  "SCC_sizes" : [ 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 1,
+    "to" : 0,
+    "w" : 4
+  }, {
+    "from" : 2,
+    "to" : 1,
+    "w" : 2
+  }, {
+    "from" : 3,
+    "to" : 2,
+    "w" : 3
+  }, {
+    "from" : 3,
+    "to" : 1,
+    "w" : 2
+  }, {
+    "from" : 5,
+    "to" : 4,
+    "w" : 1
+  }, {
+    "from" : 5,
+    "to" : 1,
+    "w" : 1
+  }, {
+    "from" : 6,
+    "to" : 5,
+    "w" : 8
+  }, {
+    "from" : 6,
+    "to" : 2,
+    "w" : 4
+  }, {
+    "from" : 7,
+    "to" : 6,
+    "w" : 10
+  }, {
+    "from" : 7,
+    "to" : 3,
+    "w" : 10
+  }, {
+    "from" : 7,
+    "to" : 1,
+    "w" : 7
+  }, {
+    "from" : 8,
+    "to" : 1,
+    "w" : 8
+  }, {
+    "from" : 9,
+    "to" : 8,
+    "w" : 5
+  }, {
+    "from" : 9,
+    "to" : 1,
+    "w" : 9
+  }, {
+    "from" : 9,
+    "to" : 7,
+    "w" : 3
+  }, {
+    "from" : 10,
+    "to" : 8,
+    "w" : 7
+  }, {
+    "from" : 10,
+    "to" : 0,
+    "w" : 9
+  }, {
+    "from" : 11,
+    "to" : 10,
+    "w" : 4
+  }, {
+    "from" : 11,
+    "to" : 1,
+    "w" : 8
+  }, {
+    "from" : 11,
+    "to" : 7,
+    "w" : 9
+  } ],
+  "source_component" : 1,
+  "derived_task_order" : [ 2, 4, 7, 6, 3, 10, 1, 11, 13, 5, 14, 8, 9, 0, 12 ],
+  "topological_order" : [ 9, 11, 10, 7, 8, 6, 3, 5, 2, 4, 1, 0 ],
+  "shortest_distances" : [ 4.0, 0.0, "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity" ],
+  "longest_distances" : [ 4.0, 0.0, "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity" ],
+  "critical_path" : [ 1, 0 ],
+  "critical_length" : 4.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 15,
+      "edges_traversed" : 30
+    },
+    "scc_time_ns" : 52700,
+    "condensation_time_ns" : 125100,
+    "topo_counters" : {
+      "kahn_pops" : 12,
+      "kahn_edge_checks" : 20
+    },
+    "topo_time_ns" : 47400,
+    "shortest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "shortest_time_ns" : 5700,
+    "longest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "longest_time_ns" : 4100,
+    "total_time_ns" : 424400
+  }
+}, {
+  "dataset_index" : 5,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 1,
+  "num_components" : 6,
+  "SCCs" : [ [ 0 ], [ 8 ], [ 4 ], [ 10, 3, 9, 11, 6, 5, 1 ], [ 2 ], [ 7 ] ],
+  "SCC_sizes" : [ 1, 1, 1, 7, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 3,
+    "to" : 2,
+    "w" : 8
+  }, {
+    "from" : 3,
+    "to" : 1,
+    "w" : 3
+  }, {
+    "from" : 5,
+    "to" : 1,
+    "w" : 8
+  }, {
+    "from" : 5,
+    "to" : 3,
+    "w" : 1
+  } ],
+  "source_component" : 3,
+  "derived_task_order" : [ 0, 2, 7, 10, 3, 9, 11, 6, 5, 1, 4, 8 ],
+  "topological_order" : [ 0, 4, 5, 3, 2, 1 ],
+  "shortest_distances" : [ "Infinity", 3.0, 8.0, 0.0, "Infinity", "Infinity" ],
+  "longest_distances" : [ "-Infinity", 3.0, 8.0, 0.0, "-Infinity", "-Infinity" ],
+  "critical_path" : [ 3, 2 ],
+  "critical_length" : 8.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 12,
+      "edges_traversed" : 18
+    },
+    "scc_time_ns" : 164200,
+    "condensation_time_ns" : 40100,
+    "topo_counters" : {
+      "kahn_pops" : 6,
+      "kahn_edge_checks" : 4
+    },
+    "topo_time_ns" : 73200,
+    "shortest_counters" : {
+      "edge_checks" : 2,
+      "relaxations" : 2
+    },
+    "shortest_time_ns" : 15700,
+    "longest_counters" : {
+      "edge_checks" : 2,
+      "relaxations" : 2
+    },
+    "longest_time_ns" : 2700,
+    "total_time_ns" : 499300
+  }
+}, {
+  "dataset_index" : 6,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 35,
+  "num_components" : 8,
+  "SCCs" : [ [ 2 ], [ 11 ], [ 39, 44, 34, 19, 36, 17, 4, 15, 7, 27, 40, 6, 25, 1, 30, 24, 9, 41, 42, 16, 10, 28, 31, 38, 26, 29, 33, 12, 20, 5, 14, 43, 23, 37, 32, 21, 18, 0 ], [ 13 ], [ 3 ], [ 8 ], [ 22 ], [ 35 ] ],
+  "SCC_sizes" : [ 1, 1, 38, 1, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 2,
+    "to" : 0,
+    "w" : 3
+  }, {
+    "from" : 2,
+    "to" : 1,
+    "w" : 2
+  }, {
+    "from" : 3,
+    "to" : 2,
+    "w" : 4
+  }, {
+    "from" : 4,
+    "to" : 2,
+    "w" : 2
+  }, {
+    "from" : 4,
+    "to" : 3,
+    "w" : 5
+  }, {
+    "from" : 5,
+    "to" : 2,
+    "w" : 6
+  }, {
+    "from" : 6,
+    "to" : 2,
+    "w" : 5
+  }, {
+    "from" : 7,
+    "to" : 5,
+    "w" : 5
+  }, {
+    "from" : 7,
+    "to" : 2,
+    "w" : 2
+  }, {
+    "from" : 7,
+    "to" : 0,
+    "w" : 8
+  } ],
+  "source_component" : 7,
+  "derived_task_order" : [ 3, 22, 35, 13, 8, 39, 44, 34, 19, 36, 17, 4, 15, 7, 27, 40, 6, 25, 1, 30, 24, 9, 41, 42, 16, 10, 28, 31, 38, 26, 29, 33, 12, 20, 5, 14, 43, 23, 37, 32, 21, 18, 0, 2, 11 ],
+  "topological_order" : [ 4, 6, 7, 3, 5, 2, 0, 1 ],
+  "shortest_distances" : [ 5.0, 4.0, 2.0, "Infinity", "Infinity", 5.0, "Infinity", 0.0 ],
+  "longest_distances" : [ 14.0, 13.0, 11.0, "-Infinity", "-Infinity", 5.0, "-Infinity", 0.0 ],
+  "critical_path" : [ 7, 5, 2, 0 ],
+  "critical_length" : 14.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 45,
+      "edges_traversed" : 135
+    },
+    "scc_time_ns" : 170500,
+    "condensation_time_ns" : 56800,
+    "topo_counters" : {
+      "kahn_pops" : 8,
+      "kahn_edge_checks" : 10
+    },
+    "topo_time_ns" : 20200,
+    "shortest_counters" : {
+      "edge_checks" : 6,
+      "relaxations" : 5
+    },
+    "shortest_time_ns" : 4600,
+    "longest_counters" : {
+      "edge_checks" : 6,
+      "relaxations" : 6
+    },
+    "longest_time_ns" : 3500,
+    "total_time_ns" : 425000
+  }
+}, {
+  "dataset_index" : 7,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 7,
+  "num_components" : 22,
+  "SCCs" : [ [ 10 ], [ 7 ], [ 20 ], [ 29 ], [ 13 ], [ 31 ], [ 14 ], [ 19 ], [ 22 ], [ 21 ], [ 5 ], [ 16 ], [ 3 ], [ 2, 25, 24, 1, 18, 12, 11, 23, 8, 27, 17, 30, 34, 0 ], [ 15 ], [ 4 ], [ 6 ], [ 9 ], [ 26 ], [ 28 ], [ 32 ], [ 33 ] ],
+  "SCC_sizes" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 14, 1, 1, 1, 1, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 1,
+    "to" : 0,
+    "w" : 5
+  }, {
+    "from" : 2,
+    "to" : 1,
+    "w" : 9
+  }, {
+    "from" : 3,
+    "to" : 2,
+    "w" : 6
+  }, {
+    "from" : 4,
+    "to" : 3,
+    "w" : 5
+  }, {
+    "from" : 5,
+    "to" : 4,
+    "w" : 6
+  }, {
+    "from" : 5,
+    "to" : 2,
+    "w" : 3
+  }, {
+    "from" : 6,
+    "to" : 5,
+    "w" : 4
+  }, {
+    "from" : 6,
+    "to" : 1,
+    "w" : 4
+  }, {
+    "from" : 7,
+    "to" : 1,
+    "w" : 10
+  }, {
+    "from" : 8,
+    "to" : 6,
+    "w" : 2
+  }, {
+    "from" : 8,
+    "to" : 7,
+    "w" : 7
+  }, {
+    "from" : 9,
+    "to" : 8,
+    "w" : 8
+  }, {
+    "from" : 11,
+    "to" : 10,
+    "w" : 8
+  }, {
+    "from" : 11,
+    "to" : 9,
+    "w" : 5
+  }, {
+    "from" : 12,
+    "to" : 11,
+    "w" : 8
+  }, {
+    "from" : 12,
+    "to" : 4,
+    "w" : 7
+  }, {
+    "from" : 13,
+    "to" : 12,
+    "w" : 5
+  }, {
+    "from" : 13,
+    "to" : 9,
+    "w" : 1
+  }, {
+    "from" : 13,
+    "to" : 8,
+    "w" : 9
+  }, {
+    "from" : 13,
+    "to" : 10,
+    "w" : 4
+  }, {
+    "from" : 13,
+    "to" : 7,
+    "w" : 5
+  }, {
+    "from" : 13,
+    "to" : 6,
+    "w" : 7
+  }, {
+    "from" : 13,
+    "to" : 1,
+    "w" : 10
+  }, {
+    "from" : 13,
+    "to" : 0,
+    "w" : 8
+  }, {
+    "from" : 13,
+    "to" : 2,
+    "w" : 4
+  }, {
+    "from" : 14,
+    "to" : 13,
+    "w" : 8
+  }, {
+    "from" : 14,
+    "to" : 10,
+    "w" : 5
+  }, {
+    "from" : 14,
+    "to" : 7,
+    "w" : 10
+  }, {
+    "from" : 15,
+    "to" : 14,
+    "w" : 2
+  }, {
+    "from" : 16,
+    "to" : 13,
+    "w" : 5
+  }, {
+    "from" : 17,
+    "to" : 13,
+    "w" : 3
+  }, {
+    "from" : 17,
+    "to" : 14,
+    "w" : 3
+  }, {
+    "from" : 18,
+    "to" : 5,
+    "w" : 2
+  }, {
+    "from" : 18,
+    "to" : 13,
+    "w" : 9
+  }, {
+    "from" : 19,
+    "to" : 9,
+    "w" : 3
+  }, {
+    "from" : 19,
+    "to" : 14,
+    "w" : 8
+  }, {
+    "from" : 19,
+    "to" : 13,
+    "w" : 2
+  }, {
+    "from" : 20,
+    "to" : 9,
+    "w" : 1
+  }, {
+    "from" : 21,
+    "to" : 13,
+    "w" : 2
+  }, {
+    "from" : 21,
+    "to" : 8,
+    "w" : 7
+  } ],
+  "source_component" : 1,
+  "derived_task_order" : [ 4, 6, 9, 26, 28, 32, 33, 15, 2, 25, 24, 1, 18, 12, 11, 23, 8, 27, 17, 30, 34, 0, 3, 16, 5, 21, 22, 14, 19, 31, 13, 29, 20, 7, 10 ],
+  "topological_order" : [ 15, 16, 17, 18, 19, 20, 21, 14, 13, 12, 11, 10, 9, 8, 6, 7, 5, 4, 3, 2, 1, 0 ],
+  "shortest_distances" : [ 5.0, 0.0, "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity" ],
+  "longest_distances" : [ 5.0, 0.0, "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity" ],
+  "critical_path" : [ 1, 0 ],
+  "critical_length" : 5.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 35,
+      "edges_traversed" : 70
+    },
+    "scc_time_ns" : 26800,
+    "condensation_time_ns" : 31300,
+    "topo_counters" : {
+      "kahn_pops" : 22,
+      "kahn_edge_checks" : 40
+    },
+    "topo_time_ns" : 20000,
+    "shortest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "shortest_time_ns" : 3800,
+    "longest_counters" : {
+      "edge_checks" : 1,
+      "relaxations" : 1
+    },
+    "longest_time_ns" : 1800,
+    "total_time_ns" : 258200
+  }
+}, {
+  "dataset_index" : 8,
+  "input_path" : "data/input.json",
+  "weight_model" : "edge",
+  "source_vertex" : 13,
+  "num_components" : 17,
+  "SCCs" : [ [ 0 ], [ 13 ], [ 2 ], [ 9 ], [ 21 ], [ 5 ], [ 14, 24, 3, 7, 1 ], [ 19, 17, 10, 8, 20 ], [ 4 ], [ 22 ], [ 6 ], [ 11 ], [ 12 ], [ 15 ], [ 16 ], [ 18 ], [ 23 ] ],
+  "SCC_sizes" : [ 1, 1, 1, 1, 1, 1, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+  "condensation_edges" : [ {
+    "from" : 2,
+    "to" : 1,
+    "w" : 7
+  }, {
+    "from" : 4,
+    "to" : 2,
+    "w" : 5
+  }, {
+    "from" : 4,
+    "to" : 3,
+    "w" : 4
+  }, {
+    "from" : 6,
+    "to" : 4,
+    "w" : 4
+  }, {
+    "from" : 6,
+    "to" : 5,
+    "w" : 9
+  }, {
+    "from" : 6,
+    "to" : 1,
+    "w" : 10
+  }, {
+    "from" : 7,
+    "to" : 6,
+    "w" : 2
+  }, {
+    "from" : 7,
+    "to" : 2,
+    "w" : 3
+  }, {
+    "from" : 8,
+    "to" : 6,
+    "w" : 7
+  }, {
+    "from" : 8,
+    "to" : 7,
+    "w" : 1
+  }, {
+    "from" : 9,
+    "to" : 8,
+    "w" : 4
+  }, {
+    "from" : 9,
+    "to" : 3,
+    "w" : 4
+  }, {
+    "from" : 10,
+    "to" : 8,
+    "w" : 1
+  }, {
+    "from" : 10,
+    "to" : 9,
+    "w" : 7
+  }, {
+    "from" : 10,
+    "to" : 1,
+    "w" : 10
+  }, {
+    "from" : 12,
+    "to" : 7,
+    "w" : 1
+  }, {
+    "from" : 13,
+    "to" : 12,
+    "w" : 4
+  }, {
+    "from" : 13,
+    "to" : 7,
+    "w" : 4
+  }, {
+    "from" : 14,
+    "to" : 13,
+    "w" : 3
+  }, {
+    "from" : 14,
+    "to" : 4,
+    "w" : 10
+  }, {
+    "from" : 16,
+    "to" : 13,
+    "w" : 8
+  }, {
+    "from" : 16,
+    "to" : 14,
+    "w" : 7
+  } ],
+  "source_component" : 1,
+  "derived_task_order" : [ 0, 6, 11, 18, 23, 22, 16, 4, 15, 12, 19, 17, 10, 8, 20, 14, 24, 3, 7, 1, 21, 5, 2, 9, 13 ],
+  "topological_order" : [ 0, 10, 11, 15, 16, 9, 14, 8, 13, 12, 7, 6, 4, 5, 2, 3, 1 ],
+  "shortest_distances" : [ "Infinity", 0.0, "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity" ],
+  "longest_distances" : [ "-Infinity", 0.0, "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity", "-Infinity" ],
+  "critical_path" : [ 1 ],
+  "critical_length" : 0.0,
+  "metrics" : {
+    "scc_counters" : {
+      "dfs_visits" : 25,
+      "edges_traversed" : 37
+    },
+    "scc_time_ns" : 20600,
+    "condensation_time_ns" : 20400,
+    "topo_counters" : {
+      "kahn_pops" : 17,
+      "kahn_edge_checks" : 22
+    },
+    "topo_time_ns" : 22300,
+    "shortest_counters" : { },
+    "shortest_time_ns" : 23700,
+    "longest_counters" : { },
+    "longest_time_ns" : 1600,
+    "total_time_ns" : 282200
+  }
+} ]
